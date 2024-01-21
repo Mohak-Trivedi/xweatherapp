@@ -49,7 +49,7 @@ const WeatherDisplay = ({ city }) => {
           setWeatherData(response.data);
         })
         .catch((error) => {
-          console.error("Error fetching data: ", error);
+          console.error("Error fetching data");
           alert("Failed to fetch weather data");
         })
         .finally(() => {
